@@ -1,0 +1,36 @@
+
+
+.signIn-container {
+    padding: 30px;
+  }
+  
+  .signIn-container form div {
+    display: flex;
+  }
+  
+  .signIn-container input[type="email"],
+  .signIn-container input[type="password"] {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .signIn-container input[type="email"] {
+    margin-right: 30px;
+  }
+  
+  .signIn-container button[type="submit"] {
+    margin-top: 40px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .signIn-container form div {
+      flex-direction: column;
+    }
+    .signIn-container input[type="email"],
+    .signIn-container input[type="password"] {
+      width: 100%;
+    }
+  }
+  

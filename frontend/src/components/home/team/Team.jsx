@@ -3,6 +3,7 @@ import Heading from "../../common/Heading"
 import { team } from "../../data/Data"
 import "./team.css"
 
+
 const Team = () => {
   return (
     <>
@@ -14,6 +15,8 @@ const Team = () => {
             {team.map((val, index) => (
               <div className='box' key={index}>
                 <button className='btn3'>{val.list} Listings</button>
+                
+      
                 <div className='details'>
                   <div className='img'>
                     <img src={val.cover} alt='' />

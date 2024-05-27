@@ -16,14 +16,15 @@ const Contact = () => {
 
     // Send form data to the backend
     try {
-      const response = await fetch("/submit-contact-form", {
+      const response = await fetch("http://localhost:3000/submit-contact-form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ name, email, subject, message }),
       });
-
+         
+        console.log(JSON.stringify({ name, email, subject, message }))
       if (response.ok) {
         alert("Form submitted successfully!");
         // Clear form fields after successful submission
